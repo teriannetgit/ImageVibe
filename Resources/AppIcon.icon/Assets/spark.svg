@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF4DC"/>
+      <stop offset="1" stop-color="#F6C46A"/>
+    </linearGradient>
+  </defs>
+  <!-- four-point sparkles: the image being made -->
+  <g fill="url(#glow)">
+    <path d="M736 152 C 748 252, 786 290, 886 302 C 786 314, 748 352, 736 452 C 724 352, 686 314, 586 302 C 686 290, 724 252, 736 152 Z"/>
+    <path d="M858 452 C 863 492, 878 507, 918 512 C 878 517, 863 532, 858 572 C 853 532, 838 517, 798 512 C 838 507, 853 492, 858 452 Z"/>
+  </g>
+</svg>

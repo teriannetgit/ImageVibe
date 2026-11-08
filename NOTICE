@@ -1,0 +1,33 @@
+ImageVibe
+Copyright 2026 Teriannet Group Inc.
+
+This product includes software licensed under the Apache License, Version 2.0
+(see LICENSE).
+
+------------------------------------------------------------------------------
+Third-party components
+------------------------------------------------------------------------------
+
+Bonsai image engine (Swift port, pinned to commit 2401fb7616728fe72df38a730227d186a5de49dd)
+  Copyright 2026 Duration AI
+  https://github.com/duration-ai/bonsai-image-ios  (Apache-2.0)
+  An independent port of the Bonsai Image pipeline to Swift / mlx-swift.
+
+Bonsai Image model (prism-ml/bonsai-image-ternary-4B-mlx-2bit, pinned to commit
+2c24c81b934a658ba5590cf39088ba929985b4a8), downloaded by the app at first launch
+  Created using Bonsai Image by Prism ML.
+  https://huggingface.co/prism-ml/bonsai-image-ternary-4B-mlx-2bit  (Apache-2.0)
+  Built from FLUX.2 [klein] 4B, Copyright 2026 Black Forest Labs (Apache-2.0)
+  https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+  and Qwen3-4B, Copyright 2024 Alibaba Cloud (Apache-2.0)
+  https://huggingface.co/Qwen/Qwen3-4B
+
+Dependencies
+  mlx-swift, Copyright Apple Inc. (MIT)
+  swift-transformers, Copyright Hugging Face (Apache-2.0)
+
+ImageVibe is not affiliated with or endorsed by Duration AI, Prism ML, Black
+Forest Labs, Alibaba Cloud, Apple or Hugging Face.
+
+Full licence texts for every dependency are in Resources/Acknowledgements.json,
+which the app shows in its About window.

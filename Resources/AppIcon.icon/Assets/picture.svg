@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6C46A"/>
+      <stop offset="1" stop-color="#DE8A2C"/>
+    </linearGradient>
+  </defs>
+  <!-- print border -->
+  <rect x="212" y="292" width="560" height="520" rx="56" fill="#F3E6D0"/>
+  <!-- the image: amber sky, red sun, two hills drawn as a wave (the vibe) -->
+  <rect x="248" y="328" width="488" height="448" rx="28" fill="url(#sky)"/>
+  <circle cx="404" cy="488" r="66" fill="#C4421F"/>
+  <path d="M248 612 C 320 552, 404 552, 492 604 C 580 656, 664 652, 736 592 V 748 A 28 28 0 0 1 708 776 H 276 A 28 28 0 0 1 248 748 Z" fill="#A9361A"/>
+  <path d="M248 680 C 330 628, 420 632, 500 672 C 580 712, 664 708, 736 664 V 748 A 28 28 0 0 1 708 776 H 276 A 28 28 0 0 1 248 748 Z" fill="#3A1A10"/>
+</svg>

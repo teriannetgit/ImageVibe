@@ -1,0 +1,47 @@
+name: ImageVibe
+options:
+  deploymentTarget:
+    macOS: "27.0"
+packages:
+  BonsaiEngine:
+    url: https://github.com/duration-ai/bonsai-image-ios
+    revision: 2401fb7616728fe72df38a730227d186a5de49dd
+settings:
+  base:
+    ARCHS: arm64
+    ONLY_ACTIVE_ARCH: YES
+    SWIFT_VERSION: "6.0"
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+    SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+targets:
+  ImageVibe:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources
+      - path: Resources
+        buildPhase: resources
+    dependencies:
+      - package: BonsaiEngine
+        product: BonsaiEngine
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.ImageVibe
+        PRODUCT_NAME: ImageVibe
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: ImageVibe
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon # Resources/AppIcon.icon (Icon Composer format)
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.graphics-design
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "2"
+        CODE_SIGN_ENTITLEMENTS: ImageVibe.entitlements
+        # Ad-hoc ("Sign to Run Locally"): builds on any Mac without an Apple developer team.
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "-"
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO
+schemes:
+  ImageVibe:
+    build:
+      targets:
+        ImageVibe: all
